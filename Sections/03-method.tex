@@ -1,24 +1,61 @@
 %*----------- SLIDE -------------------------------------------------------------
 \begin{frame}[t]{Metodologia - Avaliação do modelo}
+    % Para analisar o modelo criado, os autores adotadaram quatro métricas:
+    % \begin{table}[]
+    %     \vspace{0.5cm}
+    %     \centering
+    %     \begin{tabular}{ll}
+    %         \begin{math} Accuracy = \frac{Number of correct predictions}{Total number of predictions} \end{math} 
+    %         &
+    %         \begin{math} Precision = \frac{True Positive}{True Positive + False Negative} \end{math} 
+    %         \\
+    %         &   \\
+    %         &   \\
+    %         &   \\
+    %         \begin{math} Recall = \frac{True Positive}{Ture Positive + False Negative} \end{math}
+    %         &
+    %         \begin{math} F_1Score = 2\cdot\frac{Precision \cdot Recall}{Precision + Recall} \end{math} 
+    %     \end{tabular}
+    % \end{table}
+    
+    Para analisar o modelo criado, os autores adotadaram quatro métricas 
+    \vspace{0.4cm}
 
+    O parâmetro \textbf{\textit{"Accuracy"}}  representa a fração das predições feitas corretamente
+    \vspace{0.4cm}
+
+    A \textbf{\textit{"Precision"}} é a razão entre as predições verdadeiras corretas dentre todas as predições verdadeiras, corretas ou não 
     \begin{table}[]
-        Para analisar o modelo criado, foram adotadas quatro métricas
-        \vspace{1cm}
+        \vspace{0.8cm}
         \centering
         \begin{tabular}{ll}
-            \begin{math} Accuracy = \frac{Number of correct predictions}{Total number of predictions} \end{math} 
+            \begin{math} Accuracy = \frac{Number\,of\,correct\,predictions}{Total\,number\,of\,predictions} \end{math} 
             &
-            \begin{math} Precision = \frac{True Positive}{True Positive + False Negative} \end{math} 
-            \\
-            &   \\
-            &   \\
-            &   \\
-            \begin{math} Recall = \frac{True Positive}{Ture Positive + False Negative} \end{math}
-            &
-            \begin{math} F_1Score = 2\cdot\frac{Precision \cdot Recall}{Precision + Recall} \end{math} 
+            \begin{math} Precision = \frac{True\,Positive}{True\,Positive + False\,Negative} \end{math} 
         \end{tabular}
-        \end{table}
+    \end{table}
     
 %*----------- notes
     \note[item]{Notes can help you to remember important information. Turn on the notes option.}
 \end{frame}
+
+%*----------- SLIDE -------------------------------------------------------------
+\begin{frame}[t]{Metodologia - Avaliação do modelo}
+    O parâmetro \textbf{\textit{"Recall"}} é a habilidade do modelo de encontrar os verdadeiros positivos
+    \vspace{0.4cm}
+    
+    A \pmb{"\begin{math} F_1Score \end{math}"} é a média harmônica pondera entre os parâmetros \textit{"Precision"} e \textit{"Recall"}
+    \begin{table}[]
+        \vspace{0.8cm}
+        \centering
+        \begin{tabular}{ll}
+            \begin{math} Recall = \frac{True\,Positive}{True\,Positive + False\,Negative} \end{math}
+            &
+            \begin{math} F_1Score = 2\cdot\frac{Precision \cdot Recall}{Precision + Recall} \end{math}
+        \end{tabular}
+    \end{table}
+    
+%*----------- notes
+    \note[item]{Notes can help you to remember important information. Turn on the notes option.}
+\end{frame}
+% FALTA: contexto(onde e como), mapa, solução
