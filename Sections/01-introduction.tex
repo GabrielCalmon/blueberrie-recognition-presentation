@@ -2,11 +2,11 @@
 \begin{frame}[t]{Introdução} 
     \newcommand\vspaceintro{0.2cm}
     \transdissolve[duration=0.5]
-    No Chile, até os anos 70 a agricultura era voltada, majoritariamente, ao fornecimento interno de produtos agrícolas não processados \cite{blueberryrecognition}\vspace{\vspaceintro}
+    No Chile, até os anos 70, a agricultura era voltada, majoritariamente, ao fornecimento interno de produtos agrícolas não processados \cite{blueberryrecognition}\vspace{\vspaceintro}
     
-    Atualmente, a agricultura é reponsável por 11\% do PIB (\$27 bilhões), representando 28\% do comércio e empregando 10\% da força de trabalho nacional\cite{ChilePIB:online} \vspace{\vspaceintro} 
+    Atualmente, a agricultura é reponsável por 11\% do PIB (\$27 bilhões), representando 28\% do comércio e emprega 10\% da força de trabalho nacional\cite{ChilePIB:online} \vspace{\vspaceintro} 
 
-    80\% das plantações de blueberry são do tipo "legacy blueberries"
+    80\% das plantações chilenas de blueberry utilizam a variedade "legacy blueberries"
     \vspace{-0.4cm}
     \begin{columns}[t]
         \column{.4\linewidth}
@@ -58,7 +58,7 @@
             \column{.4\linewidth}
                 \begin{enumerate}
                     \item há previsões para o ano de 2030 sobre um abondono significativo dos trabalhadores na agricultura
-                    \item no estágio de enraizamento durante as estações críticas ocorrem perdas superiores a 50\% dos brotos
+                    \item no estágio de enraizamento, durante as estações críticas, ocorrem perdas superiores a 50\% dos brotos
                 \end{enumerate}
             \column{.6\linewidth}
             \vspace{-0.5cm}
@@ -75,13 +75,43 @@
 %-
 
 %*----------- CONTEXTO -------------------------------------------------------------
-\begin{frame}[t]{Contexto} 
-    \newcommand\vspacecontexto{0.2cm}
+\begin{frame}[t]{Recursos utilizados} 
+    \newcommand\vspacerecursos{0.2cm}
     \transdissolve[duration=0.5]
-    fgdfgdfgfd fgdfgdfgfd \vspace{\vspacecontexto}
+    Todo o trabalho de pesquisa foi realizada nas instalações do laboratório de micropropagação da Universidade Adventista do Chile \vspace{\vspacerecursos} 
     
-    rttrd rdgd\vspace{\vspacecontexto} 
+    A rede de reconhecimento utilizada foi a CNN (convolutional neural network), um tipo de rede neural especializada\vspace{\vspacerecursos} 
+
+    O treinamento da rede foi feito utilizando-se o TensorFlow, uma biblioteca gratuita e open-source \vspace{\vspacerecursos} 
+
+    As características de brotos saudáveis de legacy blueberry na fase de enraizamento são:
+    \begin{enumerate}
+        \item folhas de cor verde ou lilás
+        \item tamanho entre 2 cm a 10 cm
+        \item folhas ovais ou elípticas levemente pontiaguadas
+    \end{enumerate}
 %*----------- notes
     \note[item]{Notes can help you to remember important information. Turn on the notes option.}
 \end{frame}
 %-
+
+%*----------- CONTEXTO -------------------------------------------------------------
+\begin{frame}[t]{Recursos utilizados} 
+    \newcommand\vspacerecursos{0.2cm}
+    \transdissolve[duration=0.5]
+    A máquina utilizada foi um laptop Acer Nitro 5 AN515-5 com processador AMD Ryzen 5 2500U, Radeon Vega Mobile Gfx, memória RAM de 12 GB. Para o software foi utilizado o Python version 3.7 e TensorFlow version 1.13.1\vspace{\vspacerecursos} 
+
+    O braço robótico era controlado por uma Raspberry Pi 3 B+ \vspace{\vspacerecursos}
+    
+    \begin{center}
+        %\centerline{
+            \begin{figure}
+                %\roundpic[xshift=0cm,yshift=0cm]{5cm}{8cm}{dying-blueberry.jpg}
+                \includegraphics[width=0.5\textwidth]{modelo-3d.jpg}
+                \caption{modelo 3d do sistema robótico CNC}
+            \end{figure}
+        %}
+    \end{center}
+%*----------- notes
+    \note[item]{Notes can help you to remember important information. Turn on the notes option.}
+\end{frame}
